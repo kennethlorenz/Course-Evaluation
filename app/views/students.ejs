@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <title>Students</title>
+  </head>
+  <body style="margin-top: 25px">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <table class="table table-striped table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% students.forEach(function(student){ %>
+            <tr>
+              <td><%= student.firstName %></td>
+              <td><%= student.lastName %></td>
+              <td><%= student.email%></td>
+            </tr>
+            <% })%>
+          </tbody>
+        </table>
+        <a class="btn btn-primary" href="/" role="button">Main menu</a>
+      </div>
+    </div>
+  </body>
+</html>

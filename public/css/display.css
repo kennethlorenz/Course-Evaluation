@@ -1,0 +1,8 @@
+form {
+  position: relative;
+  top: 55px;
+}
+
+input {
+  display: inline-block;
+}
