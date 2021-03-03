@@ -70,20 +70,3 @@ exports.displayForm = function (req, res) {
 exports.renderDisplaySearchStudent = function (req, res) {
   res.render("search_comments");
 };
-
-// exports.commentsPage = function (req, res) {
-
-//   var session = req.session;
-//   if (!session.student){
-//     //display the ejs page
-//     res.redirect('/');
-//   }
-//   else{
-//       var studentID = session.student._id
-//       Comment.find({student:ObjectId(studentID)}, (err, comments) => {
-//           if (err) {
-//               // Call the next middleware with an error message
-//               console.log(err);
-//           } else {
-//               //console.log(comments);
-//               // Use t
